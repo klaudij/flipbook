@@ -31,7 +31,7 @@ body {
   /*1* let pointer event go trough pages of lower Z than .book */
   pointer-events: none;
   transform-style: preserve-3d;
-  transition: translate 1s;
+  transition: translate .5s;
   translate: calc(min(var(--c), 1) * 50%) 0%;
   /* Incline on the X axis for pages preview */
   rotate: 1 0 0 30deg;
@@ -50,8 +50,8 @@ body {
   transform-style: preserve-3d;
   transform-origin: left center;
   transition:
-    transform 1s,
-    rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+    transform .5s,
+    rotate .5s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
   translate: calc(var(--i) * -100%) 0px 0px;
   transform: translateZ( calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * .23cqmin)));
   rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
