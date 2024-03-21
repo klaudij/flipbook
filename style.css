@@ -151,9 +151,8 @@ body {
   }
 
 .cover {
-  background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
-    hsl(231, 32%, 29%) url("https://picsum.photos/id/984/800/900") 50% / cover;
-  color: hsl(200 30% 98%);
+  background: url("images/cover.jpeg") 50% / cover;
+  color: rgb(15, 15, 16);
 }
 
 
